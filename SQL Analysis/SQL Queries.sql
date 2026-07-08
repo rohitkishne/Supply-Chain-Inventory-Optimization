@@ -7,7 +7,7 @@ WITH daily_sales AS(
 		SUM(units_sold) as daily_units_sold
 	FROM inventory_data
 	Group BY product_id, date
-);
+)
 
 Select
 	product_id,
